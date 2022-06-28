@@ -20,7 +20,7 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test'){
 		exclude module: "logback-classic"
 	}
-	pitest 'org.pitest:pitest-junit5-plugin:1.0.0'
+//	pitest 'org.pitest:pitest-junit5-plugin:1.0.0'
 }
 
 test {
@@ -34,5 +34,6 @@ pitest {
 	targetClasses = ['**.*Utils']
 	targetTests = ['**.*Test']
 	timestampedReports = false
-	testPlugin = 'junit5'
+//	testPlugin = 'junit5'
+	junit5PluginVersion = '1.0.0'
 }
